@@ -2,21 +2,13 @@ import React from 'react';
 import { Route, Routes} from 'react-router-dom';
 import './App.css';
 import HomePage from './pages/homepage/hompage.component';
-
-const Hats=()=>(
-  <div>
-    <h1>
-      Hats
-    </h1>
-  </div>
-)
-
+import ShopPage from './pages/shop-page/shopPage.component.jsx';
 
 function App() {
   return (
       <Routes>
         <Route path='/' element={<HomePage/>}/>
-        <Route path='/hats' element={<Hats/>}/>
+        <Route path='/shop' element={<ShopPage/>}/>
       </Routes>
   );
 }
