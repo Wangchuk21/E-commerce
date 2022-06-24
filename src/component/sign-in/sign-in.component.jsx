@@ -19,7 +19,7 @@ handleSubmit= async event=>{
     const{ email,password}=this.state;
 
     try{
-        await auth.signInWithEmailAndPassword(email,passowrd);
+        await auth.signInWithEmailAndPassword(email,password);
         this.setState({email:'',password:''});
     } catch(error){
         console.log(error); 
